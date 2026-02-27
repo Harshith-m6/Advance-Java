@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+body {
+	background-color: #f2f2f2;
+	font-family: Arial;
+}
+
+.container {
+	width: 400px;
+	margin: 50px auto;
+	padding: 20px;
+	background: white;
+	border-radius: 8px;
+	box-shadow: 0px 0px 10px gray;
+}
+
+input {
+	width: 100%;
+	padding: 8px;
+	margin: 8px 0;
+}
+
+button {
+	width: 100%;
+	padding: 10px;
+	background-color: #4CAF50;
+	color: white;
+	border: none;
+}
+</style>
+</head>
+<body>
+	<div class="container">
+		<h2>Employee Registration form</h2>
+		<form action="EmployeeServlet" method="post">
+			<label>Name:</label> <input type="text" name="name" required>
+			<label>Phone Number:</label> <input type="tel" name="phone" required>
+			<label>Role:</label> <input type="text" name="work" required>
+			<button type="submit">Register</button>
+			<button type="reset">Cancel</button>
+		</form>
+	</div>
+</body>
+</html>
