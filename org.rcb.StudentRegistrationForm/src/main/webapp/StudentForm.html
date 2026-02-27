@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+
+/* Page Background */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #4e73df, #1cc88a);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Main Container */
+#container {
+    background-color: white;
+    width: 400px;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0px 8px 20px rgba(0,0,0,0.2);
+}
+
+/* Heading */
+#container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Labels */
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* Input Fields */
+input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Button Section */
+#select {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Register Button */
+#enter {
+    background-color: #28a745;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Cancel Button */
+#cancel {
+    background-color: #dc3545;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Hover Effects */
+#enter:hover {
+    background-color: #218838;
+}
+
+#cancel:hover {
+    background-color: #c82333;
+}
+
+</style>
+</head>
+
+<body>
+	<div id="container">
+		<h2>Student Form</h2>
+		<form action="StudentServlet" method="post">
+			<label>Enter name :</label> <input type="text" name="name"
+				placeholder="your name" required> 
+				<label>Course :</label> <input
+				type="text" name="course" placeholder="course opted" required>
+			<label>Email :</label> <input type="email" name="email"
+				placeholder="xxx@email.com" required> 
+				<label>Percentage</label>
+			<input type="number" name="percentage" placeholder="xx.xx%" required >
+			<div id="select">
+				<button id="enter" type="submit">Register</button>
+				<button id="cancel" type="reset">Cancel</button>
+			</div>
+
+		</form>
+	</div>
+</body>
+</html>
