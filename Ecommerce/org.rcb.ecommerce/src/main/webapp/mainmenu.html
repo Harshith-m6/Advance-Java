@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Product Management</title>
+
+<style>
+body {
+    font-family: Arial;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #4e73df, #1cc88a);
+}
+
+#menu {
+    background: white;
+    padding: 30px;
+    width: 350px;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+button {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4e73df;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+</style>
+</head>
+
+<body>
+
+<div id="menu">
+    <h2>Product Management System</h2>
+
+    <form action="addProduct.html">
+        <button>Add Product</button>
+    </form>
+
+    <form action="deleteProduct.html">
+        <button>Delete Product</button>
+    </form>
+
+    <form action="updateProduct.html">
+        <button>Update Product</button>
+    </form>
+
+    <form action="fetchProduct.html">
+        <button>Fetch Product</button>
+    </form>
+</div>
+
+</body>
+</html>

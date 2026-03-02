@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+    body {
+        margin:0px;
+        padding:0px;
+        
+        font-family: Arial;
+        width : 100vw;
+        height : 100vh;
+        background-color:lightblue;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+    }
+    
+    #container{
+      	padding : 10px;
+      	border-radius:8px;
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+        color : black;
+        background-color :wheat;
+    }
+    
+       #select {
+        display: flex;
+        justify-content: space-between;  /* buttons apart */
+        margin-top: 15px;
+    }
+
+    #select button {
+        padding: 8px 15px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        color: white;
+    }
+
+    #select button[type="submit"] {
+        background-color: green;
+    }
+
+    #select button[type="reset"] {
+        background-color: red;
+    }
+
+    #select button:hover {
+        opacity: 0.8;   /* small hover effect */
+    }
+    
+    
+</style>
+</head>
+<body>
+
+	<div id="container">
+		<h2>Inventory List</h2>
+		<form action="InventoryServlet" method="post">
+		<label>Product Name:</label>
+		<input type="text" name="name" placeholder="enter name of the product" required>
+		<label>Cost :</label>
+		<input type="number" name="cost" placeholder="enter cost of the  product" required>
+		<label>Availability</label>
+		<input  type="text" name="availabilty" placeholder ="enter number of availability" required>
+		<div id="select">
+		<button id="sumit" type="submit">Submit</button>
+		<button id="cancel" type="reset">Cancel</button> 
+		</div>
+		</form>
+		
+	</div>
+
+</body>
+</html>

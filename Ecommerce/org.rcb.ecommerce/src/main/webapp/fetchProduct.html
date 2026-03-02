@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Fetch Product</title>
+</head>
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    background: linear-gradient(to right, #4e73df, #1cc88a);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Container Card */
+#container {
+    background-color: white;
+    width: 350px;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Heading */
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Label */
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* Input Field */
+input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    outline: none;
+}
+
+/* Focus Effect */
+input:focus {
+    border-color: #4e73df;
+    box-shadow: 0 0 5px rgba(78, 115, 223, 0.5);
+}
+
+/* Button */
+button {
+    width: 100%;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4e73df;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+/* Hover Effect */
+button:hover {
+    opacity: 0.8;
+}
+
+/* Main Menu Link */
+a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: #4e73df;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+</style>
+<body>
+
+<h2>Fetch Product</h2>
+
+<form action="FetchProductServlet" method="get">
+
+    <label>Enter Product ID</label>
+    <input type="number" name="id" required><br><br>
+
+    <button type="submit">Fetch</button>
+    <a href="mainmenu.html">Return to Main menu</a>
+
+</form>
+
+</body>
+</html>

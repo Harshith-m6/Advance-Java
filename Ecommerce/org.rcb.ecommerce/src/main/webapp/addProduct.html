@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<style>
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	font-family: Arial, sans-serif;
+	height: 100vh;
+	background: linear-gradient(to right, #4e73df, #1cc88a);
+	display: flex;
+	flex-direction:column;
+	justify-content: center;
+	align-items: center;
+}
+#container {
+    background-color: white;
+    width: 350px;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+#container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 14px;
+}
+input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+/* Input focus effect */
+input:focus {
+    border-color: #4e73df;
+    box-shadow: 0 0 5px rgba(78, 115, 223, 0.5);
+}
+
+/* Button container */
+#click {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+/* Buttons */
+button {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Submit button */
+#send {
+    background-color: #28a745;
+    color: white;
+}
+
+/* Cancel button */
+#cancel {
+    background-color: #dc3545;
+    color: white;
+}
+
+/* Button hover effect */
+button:hover {
+    opacity: 0.8;
+}
+</style>
+<body>
+	<div id="container">
+		<h2>Product Details</h2>
+		<form action="ProductServlet">
+			<label>Product Name</label> <input type="text" name="name"
+				placeholder="Enter the Product Name:" required> <label>Enter
+				the Cost</label> <input type="number" placeholder="Enter the Cost" name="cost" required>
+			<label>Enter the rate the product out of 10</label> <input type="number" name="ratings" min="0" max="10"
+				placeholder="give ratings" required>
+				<label>Brand</label> <input type="text" name="brand"
+				placeholder="Enter the Brand Name:" required>
+			<div id="click">
+				<button id="send" type="submit">Submit</button>
+				<button id="cancel" type="reset">Cancel</button>
+				<a href="mainmenu.html">Return to Main menu</a>
+			</div>
+		</form>
+	</div>
+</body>
+</html>
